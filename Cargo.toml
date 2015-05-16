@@ -1,0 +1,13 @@
+[package]
+name = "squirrel"
+version = "0.1.0"
+authors = ["Andreas Ots <andreasots@gmail.com>"]
+license = "MIT"
+
+[features]
+no-garbage-collector = ["squirrel-sys/no-garbage-collector"]
+no-compiler = ["squirrel-sys/no-compiler"]
+use-double = ["squirrel-sys/use-double"]
+
+[dependencies.squirrel-sys]
+path = "squirrel-sys"

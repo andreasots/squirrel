@@ -1,0 +1,18 @@
+[package]
+name = "squirrel-sys"
+version = "3.0.7"
+authors = ["Andreas Ots <andreasots@gmail.com>"]
+build = "build.rs"
+license = "MIT"
+
+[features]
+no-garbage-collector = []
+no-compiler = []
+use-double = []
+
+[build-dependencies]
+gcc = "0.3.5"
+bindgen = "0.14.0"
+
+[dependencies]
+libc = "0.1.7"
